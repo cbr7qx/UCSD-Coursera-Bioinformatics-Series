@@ -1,12 +1,13 @@
+import os
 
 #Grid size: rows x cols of nodes:
 rows = 5
 cols = 5
 
 
-downsGridFile = r"C:\Users\cbr7q\OneDrive\Coding\Coursera\manhattan downsGridFile.txt"
-rightsGridFile = r"C:\Users\cbr7q\OneDrive\Coding\Coursera\manhattan rightsGridFile.txt"
-diagonalsGridFile = r"C:\Users\cbr7q\OneDrive\Coding\Coursera\manhattan diagonalsGridFile.txt"
+downsGridFile = os.getcwd() + "/manhattan downsGridFile.txt"
+rightsGridFile = os.getcwd() + "/manhattan rightsGridFile.txt"
+diagonalsGridFile = os.getcwd() + "/manhattan diagonalsGridFile.txt"
 
 points = {}
 
@@ -47,7 +48,7 @@ for i in range(rows):
 print('rightsGrid: \n',rightsGrid, '\n pointsGrid: \n ',points)
 
 #build the downsGrid
-downsGridFile = r"C:\Users\cbr7q\OneDrive\Coding\Coursera\manhattan downsGridFile.txt"
+downsGridFile = os.getcwd() + "/manhattan downsGridFile.txt"
 with open(downsGridFile,'r') as file: lines= file.readlines()
 for i in range(len(lines)):
     lines[i] = lines[i].strip()
