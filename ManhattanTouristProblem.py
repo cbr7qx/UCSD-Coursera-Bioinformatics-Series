@@ -48,7 +48,6 @@ for i in range(rows):
 print('rightsGrid: \n',rightsGrid, '\n pointsGrid: \n ',points)
 
 #build the downsGrid
-downsGridFile = os.getcwd() + "/manhattan downsGridFile.txt"
 with open(downsGridFile,'r') as file: lines= file.readlines()
 for i in range(len(lines)):
     lines[i] = lines[i].strip()
