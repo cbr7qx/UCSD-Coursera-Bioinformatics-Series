@@ -1,3 +1,8 @@
+#NOTE TO USER: To run this code, you must first download the following three files from the depository:
+    #manhattan downsGridFile.txt
+    #manhattan rightsGridFile.txt
+    #manhattan diagonalsGridFile.txt
+
 import os
 
 #Grid size: rows x cols of nodes:
