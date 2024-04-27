@@ -1,6 +1,7 @@
 #This code finds the most common motifs among a group of DNA strings.
 #k = length of the kmers.
 #t = length of the motifs.
+#n = number of iterations of the function (the highest scoring motifs will be returned).
 
 import random
 
@@ -42,6 +43,7 @@ def ProfileWithPseudocounts(Motifs):
     for letter in profile:
             profile[letter] = [count[letter][j] / (t + 4) for j in range(k)] 
     return profile
+   
 def CountWithPseudocounts(Motifs):
     t = len(Motifs)
     k = len(Motifs[0])
@@ -57,7 +59,8 @@ def Motifs(profile, Dna):
     motifs = []
     for i in range(len(Dna)):
         motifs.append(ProfileMostProbableKmer(Dna[i], k, profile))
-    return motifs               
+    return motifs   
+   
 def ProfileMostProbableKmer(text, k, profile):
     n = len(text)
     MaxProb = -1.0
@@ -69,6 +72,7 @@ def ProfileMostProbableKmer(text, k, profile):
             MaxProb = kmerProb  
             most_probable_kmer = kmer  
     return most_probable_kmer
+   
 def Pr(text, profile):
     probability = 1.0
     for i in range(len(text)):
@@ -85,6 +89,7 @@ def Score(Motifs):
             if Motifs[i][j] != consensus[j]:
                 score += 1
     return score
+   
 def Consensus(Motifs):
     k = len(Motifs[0])
     count = CountWithPseudocounts(Motifs)  
@@ -98,6 +103,7 @@ def Consensus(Motifs):
                 frequentSymbol = symbol
         consensus += frequentSymbol
     return consensus
+   
 def CountWithPseudocounts(Motifs):
     t = len(Motifs)
     k = len(Motifs[0])
