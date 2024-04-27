@@ -1,3 +1,5 @@
+#This code finds the highest scoring path from source to sink on the grid depicted in the "ManhattanTouristProblem.png" file.
+
 #NOTE TO USER: To run this code, you must first download the following three files from the depository:
     #manhattanDownsGridFile.txt
     #manhattanRightsGridFile.txt
