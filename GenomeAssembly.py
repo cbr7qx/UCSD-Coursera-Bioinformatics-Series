@@ -1,3 +1,5 @@
+#This code assembles a genome from a list of kmer strings.
+
 kmerList = "AAAT AATG ACCC ACGC ATAC ATCA ATGC CAAA CACC CATA CATC CCAG CCCA CGCT CTCA GCAT GCTC TACG TCAC TCAT TGCA"
 
 def DeBruijn_Graph2(kmers):
