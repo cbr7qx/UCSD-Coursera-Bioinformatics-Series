@@ -2,8 +2,6 @@
 #k = length of the kmers.
 #t = length of the motifs.
 
-
-
 import random
 
 # Input:  Positive integers k and t, followed by a list of strings Dna
