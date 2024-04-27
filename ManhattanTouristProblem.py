@@ -1,7 +1,7 @@
 #NOTE TO USER: To run this code, you must first download the following three files from the depository:
-    #manhattan downsGridFile.txt
-    #manhattan rightsGridFile.txt
-    #manhattan diagonalsGridFile.txt
+    #manhattanDownsGridFile.txt
+    #manhattanRightsGridFile.txt
+    #manhattanDiagonalsGridFile.txt
 
 import os
 
@@ -10,9 +10,9 @@ rows = 5
 cols = 5
 
 
-downsGridFile = os.getcwd() + "/manhattan downsGridFile.txt"
-rightsGridFile = os.getcwd() + "/manhattan rightsGridFile.txt"
-diagonalsGridFile = os.getcwd() + "/manhattan diagonalsGridFile.txt"
+downsGridFile = os.getcwd() + "/manhattanDownsGridFile.txt"
+rightsGridFile = os.getcwd() + "/manhattanRightsGridFile.txt"
+diagonalsGridFile = os.getcwd() + "/manhattanDiagonalsGridFile.txt"
 
 points = {}
 
