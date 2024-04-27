@@ -1,17 +1,7 @@
-#From Bioinforamtics II, week 4, 1.1: Code Challenge: LeaderboardCyclopeptideSequencing.
+#This code takes a spectrum of peptide masses and returns the most probable peptides that generated that spectrum.
+#It consists of multiple rounds of trimming a leaderboard of peptides that have the highest score according to the spectrum.
 
-#Input: An integer N and a collection of integers Spectrum.
-#Output: LeaderPeptide after running LeaderboardCyclopeptideSequencing(Spectrum, N).
-#Note: Multiple solutions may exist. You may return any one.
-
-#Sample Input:
-#10
-#0 71 113 129 147 200 218 260 313 331 347 389 460
-
-#Sample Output:
-#113-147-71-129
-
-n = 10
+n = 10 #The number of candidate peptides including ties that are included in the trimmed leaderboard at each step.
 spectrum = [0, 71, 113, 129, 147, 200, 218, 260, 313, 331, 347, 389, 460]
 
             
